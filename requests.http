@@ -1,0 +1,27 @@
+### Get all tasks
+GET http://localhost:4000/api/tasks HTTP/1.1
+
+### Get task by id
+GET http://localhost:4000/api/tasks/1 HTTP/1.1
+
+### Create a task
+POST http://localhost:4000/api/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Work",
+    "description": "Go to the work this nite",
+    "status": "Pending",
+    "dueDate": "2024-03-22"
+}
+
+### Update a task
+PUT http://localhost:4000/api/tasks/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Study",
+    "description": "Go to class in university this night",
+    "status": "Pending",
+    "dueDate": "2024-03-22"
+}
